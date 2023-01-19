@@ -1,0 +1,12 @@
+name: DevOps 07 CD
+on: 
+  push:
+    branches: [trunk]
+  workflow_dispatch: 
+
+  jobs:
+    deploy: 
+      runs-on: ubuntu-latest
+      steps: 
+        -uses: actions/checkout@v3
+        
